@@ -1,0 +1,13 @@
+{
+  "name": "csrd-render-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CSRD demo app ready for Git and Render deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: csrd-render-demo
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSRD Demo MVP</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge">Demo MVP</div>
+        <h1>CSRD Report Generator</h1>
+        <p class="muted">
+          A small web app you can deploy on Render and show as a working demo for compliance workflow discussions.
+        </p>
+      </div>
+
+      <div class="card compact">
+        <div class="label-row">
+          <span>Completion</span>
+          <strong id="progressLabel">0%</strong>
+        </div>
+        <div class="progress-track">
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <p class="muted small">
+          Shows company setup, ESG questions, rules, and report generation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Talking points</h3>
+        <ul>
+          <li>Capture a few sustainability inputs quickly.</li>
+          <li>Evaluate rules based on company profile.</li>
+          <li>Generate a first-pass draft report.</li>
+          <li>Explain how this could evolve into a real SaaS.</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SME Compliance Demo</p>
+          <h2>Interactive CSRD workflow</h2>
+          <p class="muted">This version is dependency-light and deployment-ready for Git + Render.</p>
+        </div>
+        <button id="resetBtn" class="button secondary">Reset demo data</button>
+      </header>
+
+      <nav id="steps" class="steps"></nav>
+
+      <section class="grid">
+        <div class="panel">
+          <div id="screen"></div>
+          <div class="footer-actions">
+            <button id="backBtn" class="button secondary">Back</button>
+            <button id="nextBtn" class="button primary">Next</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Current model</h3>
+          <div id="summaryPanel" class="stack"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
