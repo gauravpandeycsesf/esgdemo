@@ -265,12 +265,6 @@ function renderSummary() {
       <strong>Rule count</strong>
       <p class="muted">${rules.length} rule(s) currently active</p>
     </div>
-    <div class="info-box">
-      <strong>Architecture hint</strong>
-      <p class="muted">Frontend form → backend rules engine → generated report output.</p>
-      <p class="codeish">DB: companies, questions, answers, reports</p>
-      <p class="codeish">Rules: JSON or versioned tables</p>
-    </div>
   `;
 }
 
